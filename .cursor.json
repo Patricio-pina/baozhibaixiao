@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "name": "代码格式化",
+      "pattern": "**/*.{js,jsx,ts,tsx,json,css,scss,html}",
+      "commands": [
+        {
+          "command": "format",
+          "args": {
+            "formatOnSave": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "自动导入",
+      "pattern": "**/*.{js,jsx,ts,tsx}",
+      "commands": [
+        {
+          "command": "autoImport",
+          "args": {
+            "enabled": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "代码补全",
+      "pattern": "**/*",
+      "commands": [
+        {
+          "command": "completion",
+          "args": {
+            "enabled": true,
+            "autoTrigger": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "错误检查",
+      "pattern": "**/*.{js,jsx,ts,tsx}",
+      "commands": [
+        {
+          "command": "lint",
+          "args": {
+            "enabled": true,
+            "lintOnSave": true
+          }
+        }
+      ]
+    }
+  ]
+} 
